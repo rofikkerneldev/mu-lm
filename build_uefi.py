@@ -12,7 +12,10 @@ import subprocess
 import coloredlogs
 import argparse
 import logging
-import tomllib
+try:
+    import tomllib
+except ModuleNotFoundError:
+    import tomli as tomllib
 
 #
 # Logger
