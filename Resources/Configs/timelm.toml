@@ -14,8 +14,8 @@ requires_kernel_header = true
 # UEFI FD Configs
 #
 [uefi_fd]
-base = 0x9FC00000
-size = 0x300000
+base = 0xCE000000
+size = 0x700000
 
 #
 # Android Boot Image Kernel Configs
@@ -29,3 +29,8 @@ append_dtb         = true
 #
 [boot_image]
 header_version = 1
+kernel_offset  = "0x00000000"
+ramdisk_offset = "0x00000000"
+tags_offset    = "0x00000000"
+os_version     = "16.0.0"
+os_patch_level = "2026-06"
