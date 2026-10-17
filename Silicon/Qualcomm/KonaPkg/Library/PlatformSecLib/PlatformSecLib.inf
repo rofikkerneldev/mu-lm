@@ -26,4 +26,4 @@
 [LibraryClasses]
   IoLib
   MemoryMapHelperLib
-  ArmSmmuDetachLib
+  #ArmSmmuDetachLib

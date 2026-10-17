@@ -6,7 +6,7 @@
 #include <Library/IoLib.h>
 #include <Library/PlatformSecLib.h>
 #include <Library/MemoryMapHelperLib.h>
-#include <Library/ArmSmmuDetachLib.h>
+//#include <Library/ArmSmmuDetachLib.h>
 
 #include "PlatformRegisters.h"
 
@@ -33,8 +33,8 @@ PlatformInitialize ()
   DisableWatchDogTimer ();
 
   // Set MDP SIDs
-  CONST UINT16 MdpStreams[] = { 0x820, 0x821, 0x822, 0xC20, 0xC21, 0xC22 };
+  //CONST UINT16 MdpStreams[] = { 0x820, 0x821, 0x822, 0xC20, 0xC21, 0xC22 };
 
   // Detach IOMMU Domains
-  ArmSmmuDetach (MdpStreams, ARRAY_SIZE (MdpStreams));
+  //ArmSmmuDetach (MdpStreams, ARRAY_SIZE (MdpStreams));
 }

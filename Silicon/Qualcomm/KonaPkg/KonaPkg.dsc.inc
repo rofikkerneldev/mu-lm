@@ -47,6 +47,14 @@
   gArmTokenSpaceGuid.PcdGicRedistributorsBase|0x17A60000
 
   #
+  # Timer
+  #
+  gArmTokenSpaceGuid.PcdArmArchTimerSecIntrNum|17
+  gArmTokenSpaceGuid.PcdArmArchTimerIntrNum|18
+  gArmTokenSpaceGuid.PcdArmArchTimerVirtIntrNum|30
+  gArmTokenSpaceGuid.PcdArmArchTimerHypIntrNum|26
+
+  #
   # SMBIOS
   #
 !if $(SOC_TYPE) == 0
